@@ -1,5 +1,5 @@
 """
-TutorSim API (FastAPI) theo kiểu MODULAR MONOLITH: một ứng dụng, chia thành các module độc lập.
+Sailfish Classroom API (FastAPI) theo kiểu MODULAR MONOLITH: một ứng dụng, chia thành các module độc lập.
 Tài liệu API: docs/api.md
 Chạy (đứng trong thư mục backend):  uvicorn app.main:app --reload    -> mở http://localhost:8000/docs
 File này CHỈ ghép các module lại; nghiệp vụ nằm trong app/modules/*, bộ não AI nằm trong agent/.
@@ -17,7 +17,7 @@ from .modules.dashboard.router import router as dashboard_router
 from .modules.exams.router import router as exams_router
 from .modules.tutoring.router import router as tutoring_router
 
-app = FastAPI(title="TutorSim API", version="1.7")
+app = FastAPI(title="Sailfish Classroom API", version="1.7")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 

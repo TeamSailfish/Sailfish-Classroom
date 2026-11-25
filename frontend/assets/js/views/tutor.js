@@ -330,7 +330,7 @@ export async function account(main, { user, go }) {
   const reqs = await api.resetRequests();
   const opt = (t, s, a) => `<button class="m3card" data-a="${a}"><span class="mono">${t[0]}</span><span class="txt"><b>${t}</b><span>${s}</span></span><span class="ph">${placeholderSvg}</span></button>`;
   main.innerHTML = `
-    ${head("Cài đặt tài khoản", "Xem thông tin gia sư, các tùy chọn sử dụng TutorSim và yêu cầu đặt lại mật khẩu.")}
+    ${head("Cài đặt tài khoản", "Xem thông tin gia sư, các tùy chọn sử dụng Sailfish Classroom và yêu cầu đặt lại mật khẩu.")}
     <div class="mgr-body">
       <div class="two">
         ${panel("Thông tin cá nhân", "Quản lý thông tin tài khoản", `<div class="stack" style="gap:16px">

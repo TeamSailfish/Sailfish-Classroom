@@ -1,7 +1,7 @@
 """
 Chuyển file Excel thư viện lỗi sai (tab Loi_sai) -> data/misconceptions/ham_so.csv, oxyz.csv
     pip install openpyxl
-    python scripts/xlsx_to_csv.py "TutorSim_Loi_sai_56_cau.xlsx"
+    python scripts/xlsx_to_csv.py "Sailfish_Classroom_Loi_sai_56_cau.xlsx"
 Cột dieu_kien_hieu_ra trong Excel: các điều kiện cách nhau bằng dấu ; (mỗi điều kiện bắt đầu bằng "Gia sư").
 Giữ nguyên cột geogebra nếu CSV cũ đã có (vì Excel không có cột này).
 """

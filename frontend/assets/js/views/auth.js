@@ -7,7 +7,7 @@ function frame(root, { tag1, tag2, tag3, card, decos = "" }) {
   root.innerHTML = `
   <div class="auth">
     <section class="auth-intro" aria-hidden="false">
-      <p class="brand">TutorSim</p>
+      <p class="brand">Sailfish Classroom</p>
       <p class="tag1">${tag1}</p>
       <p class="tag2">${tag2}</p>
       <p class="tag3">${tag3}</p>
@@ -41,7 +41,7 @@ export async function login(root, { go }) {
     tag3: "Một không gian luyện giảng tập trung, được thiết kế để phản hồi rõ ràng.",
     card: `
       <h1>Chào mừng trở lại</h1>
-      <p class="sub">Đăng nhập để tiếp tục sử dụng TutorSim.</p>
+      <p class="sub">Đăng nhập để tiếp tục sử dụng Sailfish Classroom.</p>
       <p class="sub2">Sử dụng tài khoản đã đăng ký để tiếp tục</p>
       <form class="auth-form" novalidate>
         ${field("username", "Tên đăng nhập", "text", "Nhập tên đăng nhập", 'autocomplete="username" autocapitalize="none" spellcheck="false"')}
@@ -89,7 +89,7 @@ export async function register(root, { go }) {
     tag3: "Tạo tài khoản để luyện tập, xem tiến độ và nhận góp ý.",
     decos: `<img class="deco-a" src="${IMG}deco-starfish.svg" alt="" /><img class="deco-b" src="${IMG}deco-shell.svg" alt="" /><img class="deco-c" src="${IMG}deco-bubbles.svg" alt="" />`,
     card: `
-      <h1>Tạo tài khoản TutorSim</h1>
+      <h1>Tạo tài khoản Sailfish Classroom</h1>
       <p class="sub">Chọn vai trò và bắt đầu hành trình học tập.</p>
       <p class="sub2" style="font-size:16px">Thông tin có thể cập nhật sau khi đăng ký</p>
       <form class="auth-form" novalidate>
@@ -107,7 +107,7 @@ export async function register(root, { go }) {
       </form>
       <div class="auth-foot" style="margin-top:40px">
         <button class="link" type="button" data-to="login">Đã có tài khoản? Đăng nhập</button>
-        <span>Đăng ký với thông tin chính xác để sử dụng TutorSim.</span>
+        <span>Đăng ký với thông tin chính xác để sử dụng Sailfish Classroom.</span>
       </div>`,
   });
   bindNav(root, go);

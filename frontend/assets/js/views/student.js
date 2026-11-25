@@ -70,10 +70,10 @@ export async function home(main, { user }) {
 
   // Dialog chào mừng lần đầu (Figma 02 | Chào mừng)
   let seen = false;
-  try { seen = localStorage.getItem("tutorsim_welcome_" + user.id) === "1"; } catch { /* bỏ qua */ }
+  try { seen = localStorage.getItem("sfc_welcome_" + user.id) === "1"; } catch { /* bỏ qua */ }
   if (!seen && !sum.attempts.length) {
-    try { localStorage.setItem("tutorsim_welcome_" + user.id, "1"); } catch { /* bỏ qua */ }
-    const ok = await confirmDialog({ title: "Xin chào bạn!", message: "Chào mừng bạn đến với TutorSim.\nHãy cùng bắt đầu hành trình luyện tập hôm nay nhé!",
+    try { localStorage.setItem("sfc_welcome_" + user.id, "1"); } catch { /* bỏ qua */ }
+    const ok = await confirmDialog({ title: "Xin chào bạn!", message: "Chào mừng bạn đến với Sailfish Classroom.\nHãy cùng bắt đầu hành trình luyện tập hôm nay nhé!",
       ok: "Bắt đầu", cancel: "Để sau", pic: "shark-excited.svg" });
     if (ok) location.hash = "#/s/exams";
   }

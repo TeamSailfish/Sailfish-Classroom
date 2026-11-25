@@ -1,6 +1,6 @@
-# API – TutorSim
+# API – Sailfish Classroom
 
-Tài liệu về API của TutorSim, có thể chạy backend đọc `localhost:8000/docs`
+Tài liệu về API của Sailfish Classroom, có thể chạy backend đọc `localhost:8000/docs`
 
 ## Tài khoản
 

@@ -1,10 +1,6 @@
-# TutorSim – AI Agent huấn luyện gia sư bằng học sinh ảo
+# Sailfish Classroom – AI Agent huấn luyện gia sư bằng học sinh ảo
 
-Dự án probation GDG, chủ đề *Agentic AI: Agent of Changes*, lĩnh vực Education.
-
-- **Phân hệ 1 (cốt lõi):** gia sư chat chữa bài cho học sinh ảo "Nam" (mắc lỗi sai có thật), được chấm theo rubric 5 tiêu chí, và Coach Agent tự chọn bài luyện tiếp theo.
-- **Tài khoản:** gia sư, học sinh tự đăng ký; quản lý trung tâm do người phụ trách cấp. Đăng nhập bằng JWT, mỗi người chỉ thấy dữ liệu của mình.
-- **Phân hệ 2 (bản rút gọn):** học sinh làm đề trắc nghiệm có đồng hồ, mỗi phương án sai gắn mã lỗi, có điểm Toán dự kiến. Lỗi học sinh hay mắc được Coach dùng để giao bài cho gia sư.
+Tiền thân là TutorSim, một dự án được sinh ra trong kì probation của CLB GDGoC PTIT. Sailfish Classroom cho chúng ta một phương pháp mới huấn luyện gia sư thông qua học sinh ảo bằng AI. 
 
 ## Cấu trúc
 
@@ -25,8 +21,8 @@ Dự án probation GDG, chủ đề *Agentic AI: Agent of Changes*, lĩnh vực 
 
 ## Thiết kế giao diện và Frontend
 
-- **Figma:** [TutorSim – UI Screens và Prototype](https://www.figma.com/design/QsuadJi243WJ4oA83m0yKr/TutorSim). Thiết kế có Light Mode và Dark Mode cho Đăng nhập/Đăng ký, Học sinh, Gia sư và Quản lý.
-- **Bản tham chiếu khi triển khai:** `HANDOFF • TutorSim UI v1 • 2026-10-16` trong Figma, gồm 64 màn hình chính (32 Light, 32 Dark). Các thay đổi thiết kế về sau cần được nhóm thống nhất trước khi cập nhật bản bàn giao.
+- **Figma:** [Sailfish Classroom – UI Screens và Prototype](https://www.figma.com/design/QsuadJi243WJ4oA83m0yKr/TutorSim). Thiết kế có Light Mode và Dark Mode cho Đăng nhập/Đăng ký, Học sinh, Gia sư và Quản lý.
+- **Bản tham chiếu khi triển khai:** `HANDOFF • Sailfish Classroom UI v1 • 2026-10-16` trong Figma, gồm 64 màn hình chính (32 Light, 32 Dark). Các thay đổi thiết kế về sau cần được nhóm thống nhất trước khi cập nhật bản bàn giao.
 - **Trạng thái:** Nhóm đã xác nhận Prototype đạt yêu cầu; phía Backend thông báo đã đủ chức năng. Frontend đang ở giai đoạn chuẩn bị triển khai và cần kiểm thử tích hợp với API thực tế.
 - **Quy ước FE:** Dùng Figma Dev Mode để đối chiếu kích thước, màu sắc và component; ưu tiên tái sử dụng giao diện chung, đồng bộ Light/Dark. Vai trò tài khoản do Backend xác thực, không chọn lại sau đăng nhập.
 

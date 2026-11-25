@@ -1,4 +1,4 @@
-const TOKEN_KEY = "tutorsim_token";
+const TOKEN_KEY = "sailfish_classroom_token";
 let token = null;
 try { token = localStorage.getItem(TOKEN_KEY); } catch { /* trình duyệt chặn bộ nhớ */ }
 let onUnauthorized = () => {};

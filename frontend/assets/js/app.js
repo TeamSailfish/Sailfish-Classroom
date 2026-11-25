@@ -14,7 +14,7 @@ export function toggleTheme() {
   const root = document.documentElement;
   const next = root.dataset.theme === "dark" ? "light" : "dark";
   root.dataset.theme = next;
-  try { localStorage.setItem("tutorsim_theme", next); } catch { /* bỏ qua */ }
+  try { localStorage.setItem("Sailfish Classroom_theme", next); } catch { /* bỏ qua */ }
 }
 
 // ---------- điều hướng ----------
@@ -104,7 +104,7 @@ function shellHtml(user, nav) {
   return `
   <div class="shell">
     <nav class="nav" aria-label="Điều hướng chính">
-      <button id="back_to_home_button" class="nav-logo" data-go="${HOME[user.role]}" aria-label="TutorSim – Trang chủ"><img src="${IMG}logo-shark.svg" alt="" /></button>
+      <button id="back_to_home_button" class="nav-logo" data-go="${HOME[user.role]}" aria-label="Sailfish Classroom – Trang chủ"><img src="${IMG}logo-shark.svg" alt="" /></button>
       <div class="nav-items">
         ${NAV[user.role].map(([p, label, ic]) => `
           <a class="nav-item" href="#/${p}" ${p === nav ? 'aria-current="page"' : ""}>
@@ -150,7 +150,7 @@ async function openMenu(user) {
   if (user.role === "tutor") rows.unshift(["Mã gia sư", user.code]);
   el.innerHTML = `
     <div class="top"><span class="avatar" style="width:48px;height:48px"><img src="${IMG}${AVATAR[user.role]}" alt="" /></span>
-      <div><b>${esc(user.name)}</b><span>${user.role === "tutor" ? "Gia sư môn Toán THPT" : user.role === "student" ? "Học sinh lớp 12 · Môn Toán" : "Quản lý hệ thống TutorSim"}</span></div></div>
+      <div><b>${esc(user.name)}</b><span>${user.role === "tutor" ? "Gia sư môn Toán THPT" : user.role === "student" ? "Học sinh lớp 12 · Môn Toán" : "Quản lý hệ thống Sailfish Classroom"}</span></div></div>
     <dl id="menu-dl">${rows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
     <div class="acts">
       ${user.role === "manager" ? `<button class="btn tonal" data-a="account">Cài đặt tài khoản</button>` : ""}

@@ -24,7 +24,7 @@ class Settings:
     fake_llm = _flag("FAKE_LLM")
     debug = _flag("DEBUG", "1")
     only_approved = _flag("ONLY_APPROVED")
-    db_path = os.getenv("DB_PATH") or str(BACKEND_DIR / "tutorsim.sqlite3")
+    db_path = os.getenv("DB_PATH") or str(BACKEND_DIR / "sfc.sqlite3")
     cors_origins = [o.strip() for o in os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",") if o.strip()]
     max_history_turns = int(os.getenv("MAX_HISTORY_TURNS", "12"))  # giới hạn hội thoại gửi lên Gemini
     llm_timeout_sec = int(os.getenv("LLM_TIMEOUT_SEC", "60"))      # tối đa cho 1 lần gọi Gemini

@@ -1,7 +1,7 @@
 """
 Chuyển Excel ngân hàng câu hỏi (tab Cau_hoi) -> các file đề data/exams/*.json
     pip install openpyxl
-    python scripts/questions_to_exams.py "TutorSim_Ngan_hang_cau_hoi_mau.xlsx" [--tat-ca] [--so-cau 10] [--phut 15]
+    python scripts/questions_to_exams.py "Sailfish_Classroom_Ngan_hang_cau_hoi_mau.xlsx" [--tat-ca] [--so-cau 10] [--phut 15]
 Mặc định chỉ lấy câu có trang_thai = "Đồng ý". --tat-ca: lấy cả câu đang chờ duyệt (để chạy thử).
 Mỗi chuyên đề chia thành các đề liên tiếp, mỗi đề --so-cau câu.
 """

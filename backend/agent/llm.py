@@ -124,7 +124,7 @@ def _call(model, contents, config, retries=None, budget_sec=None):
             # còn đủ thời gian cho lần chờ + một lần gọi ngắn nữa thì mới thử lại
             if time.monotonic() + wait + 5 > deadline:
                 break
-            logging.getLogger("tutorsim.llm").warning("Gemini lỗi (%s), thử lại sau %.0fs: %s", kind, wait, msg[:200])
+            logging.getLogger("sfc.llm").warning("Gemini lỗi (%s), thử lại sau %.0fs: %s", kind, wait, msg[:200])
             time.sleep(wait)
     friendly = _FRIENDLY.get(kind, "Gemini lỗi.")
     detail = str(last)[:300] if last else "hết thời gian cho phép"
