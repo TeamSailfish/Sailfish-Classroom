@@ -21,7 +21,7 @@ Tiền thân là TutorSim, một dự án được sinh ra trong kì probation c
 
 ## Thiết kế giao diện và Frontend
 
-- **Figma:** [Sailfish Classroom – UI Screens và Prototype](https://www.figma.com/design/QsuadJi243WJ4oA83m0yKr/TutorSim). Thiết kế có Light Mode và Dark Mode cho Đăng nhập/Đăng ký, Học sinh, Gia sư và Quản lý.
+- **Figma:** [Sailfish Classroom – UI Screens và Prototype](https://www.figma.com/design/8OmQRk6YFcrZNi9KiIpMQR/Sailfish-s-Classroom?node-id=0-1&t=BDmFFsjvW5mEGq7V-1). Thiết kế có Light Mode và Dark Mode cho Đăng nhập/Đăng ký, Học sinh, Gia sư và Quản lý.
 - **Bản tham chiếu khi triển khai:** `HANDOFF • Sailfish Classroom UI v1 • 2026-10-16` trong Figma, gồm 64 màn hình chính (32 Light, 32 Dark). Các thay đổi thiết kế về sau cần được nhóm thống nhất trước khi cập nhật bản bàn giao.
 - **Trạng thái:** Nhóm đã xác nhận Prototype đạt yêu cầu; phía Backend thông báo đã đủ chức năng. Frontend đang ở giai đoạn chuẩn bị triển khai và cần kiểm thử tích hợp với API thực tế.
 - **Quy ước FE:** Dùng Figma Dev Mode để đối chiếu kích thước, màu sắc và component; ưu tiên tái sử dụng giao diện chung, đồng bộ Light/Dark. Vai trò tài khoản do Backend xác thực, không chọn lại sau đăng nhập.
